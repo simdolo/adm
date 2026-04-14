@@ -52,12 +52,12 @@ export default function ServicesSection() {
               <div className="group rounded-xl border bg-linear-to-br from-sky-50 to-white hover:shadow-xl hover:-translate-y-2 transition duration-300 overflow-hidden cursor-pointer">
                 
                 {/* IMAGE */}
-                <div className="relative h-56 w-full overflow-hidden bg-bottom">
+                <div className="relative h-56 w-full overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition duration-500"
+                    className="object-cover group-hover:scale-105 transition duration-500 bg-bottom"
                   />
 
                   {/* overlay jemný efekt */}
