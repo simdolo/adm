@@ -42,29 +42,27 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white/90 backdrop-blur-md shadow-lg"
-          : "bg-transparent"
+        isScrolled ? "bg-white/90 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
-    >
-      <div className="max-w-7xl mx-auto px-4">
+    > {/*max-w-8xl pl-30 pr-20 mx-auto md:max-w-5xl md:px-4 sm:max-w-7xl sm:px-4*/}
+      <div className=" max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-
-          {/* Logo */}
-          <div className="md:absolute md:left-1/2 md:-translate-x-1/2">
+          {/* LOGO LEFT */}
+          <div className="flex items-center">
             <Link href="/">
               <Image
                 src="/Logo.webp"
                 alt="admLogo"
                 width={200}
                 height={70}
+                className="h-10 w-auto"
               />
             </Link>
           </div>
 
-          {/* Desktop nav */}
-          <div className="hidden md:flex md:absolute md:right-10 space-x-6">
-            {navLinks.map((link) => (
+          {/* DESKTOP NAV RIGHT */}
+          <div className="hidden md:flex space-x-6">
+            {navLinks.map((link) =>
               link.type === "page" ? (
                 <Link
                   key={link.href}
@@ -81,21 +79,21 @@ export default function Navbar() {
                 >
                   {link.label}
                 </button>
-              )
-            ))}
+              ),
+            )}
           </div>
 
-          {/* Mobile button */}
-          <div className="md:hidden ml-auto">
+          {/* MOBILE BUTTON */}
+          <div className="md:hidden text-gray-700">
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X /> : <Menu />}
             </button>
           </div>
         </div>
 
-        {/* Mobile menu */}
+        {/* MOBILE MENU */}
         {isOpen && (
-          <div className="md:hidden bg-white border-t">
+          <div className="md:hidden bg-white border-t text-gray-700">
             {navLinks.map((link) =>
               link.type === "page" ? (
                 <Link
@@ -117,7 +115,7 @@ export default function Navbar() {
                 >
                   {link.label}
                 </button>
-              )
+              ),
             )}
           </div>
         )}

@@ -8,7 +8,7 @@ const services = [
     title: "Metrologické laboratórium",
     description:
       "Služby akreditovaného laboratória pre oblasť teploty a vlhkosti. Kalibrácie a merania na vysokej úrovni.",
-    image: "/lab.png",
+    image: "/lab1.png",
     href: "/o-nas",
     external: false,
   },
@@ -16,7 +16,7 @@ const services = [
     title: "e-shop – CELZIUS.sk",
     description:
       "Špecializovaný internetový obchod pre meracie prístroje. Vlhkomery, teplomery, barometre a meteostanice.",
-    image: "/celzius.png",
+    image: "/celzius1.png",
     href: "https://www.celzius.sk",
     external: true,
   },
@@ -24,7 +24,7 @@ const services = [
     title: "e-shop – ADMshop.sk",
     description:
       "Široký sortiment meracej techniky pre interiér aj exteriér – chladničky, bazény, sklady a viac.",
-    image: "/admshop.png",
+    image: "/admshop1.png",
     href: "https://www.admshop.sk",
     external: true,
   },
@@ -34,14 +34,14 @@ export default function ServicesSection() {
   return (
     <section className="pt-20 pb-10 bg-white">
       <div className="max-w-5xl mx-auto px-4">
-        
         {/* NADPIS */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-sky-900">
             Naše služby nájdete v
           </h2>
           <p className="text-gray-600 mt-4 max-w-xl mx-auto">
-            Profesionálne merania aj kvalitné produkty – všetko na jednom mieste.
+            Profesionálne merania aj kvalitné produkty – všetko na jednom
+            mieste.
           </p>
         </div>
 
@@ -50,14 +50,14 @@ export default function ServicesSection() {
           {services.map((item, i) => {
             const CardContent = (
               <div className="group rounded-xl border bg-linear-to-br from-sky-50 to-white hover:shadow-xl hover:-translate-y-2 transition duration-300 overflow-hidden cursor-pointer">
-                
                 {/* IMAGE */}
                 <div className="relative h-56 w-full overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition duration-500 bg-bottom"
+                    className="object-cover"
+                    style={{ objectPosition: "center bottom" }}
                   />
 
                   {/* overlay jemný efekt */}
