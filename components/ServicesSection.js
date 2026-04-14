@@ -8,7 +8,7 @@ const services = [
     title: "Metrologické laboratórium",
     description:
       "Služby akreditovaného laboratória pre oblasť teploty a vlhkosti. Kalibrácie a merania na vysokej úrovni.",
-    image: "/lab.webp",
+    image: "/lab.png",
     href: "/o-nas",
     external: false,
   },
@@ -16,7 +16,7 @@ const services = [
     title: "e-shop – CELZIUS.sk",
     description:
       "Špecializovaný internetový obchod pre meracie prístroje. Vlhkomery, teplomery, barometre a meteostanice.",
-    image: "/celzius.webp",
+    image: "/celzius.png",
     href: "https://www.celzius.sk",
     external: true,
   },
@@ -24,7 +24,7 @@ const services = [
     title: "e-shop – ADMshop.sk",
     description:
       "Široký sortiment meracej techniky pre interiér aj exteriér – chladničky, bazény, sklady a viac.",
-    image: "/admshop.webp",
+    image: "/admshop.png",
     href: "https://www.admshop.sk",
     external: true,
   },
