@@ -34,7 +34,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: "Domov", type: "scroll", target: "home" },
-    { label: "Služby", type: "page", href: "/services" },
+    { label: "Služby", type: "scroll", target: "services" },
     { label: "O nás", type: "scroll", target: "about" },
     { label: "Kontakt", type: "scroll", target: "contact" },
   ];

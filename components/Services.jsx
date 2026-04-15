@@ -100,22 +100,43 @@ const Services = () => {
 
   return (
     <div className="font-sans bg-white">
-      {/* HERO */}
-      <section className="bg-linear-to-br from-white to-sky-50 py-40 text-center relative overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-100 h-100 bg-sky-200/20 rounded-full blur-3xl"></div>
+      {/* SERVICES */}
+      <section className="pt-30">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-4xl font-extrabold text-center text-sky-900 mb-12">
+            Profesionálne Služby
+          </h2>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl font-extrabold text-sky-900 mb-4">
-            Naše Služby a Obchody
-          </h1>
-          <p className="text-gray-600 leading-relaxed">
-            Komplexný sortiment meracej techniky a profesionálnych služieb
-          </p>
+          <div className="grid md:grid-cols-4 gap-6">
+            {services.map((s) => (
+              <div
+                key={s.id}
+                className="p-6 rounded-xl border bg-linear-to-br from-sky-50 to-white hover:shadow-xl hover:-translate-y-2 transition group"
+              >
+                <div className="text-sky-300 group-hover:text-sky-500 mb-4 transition">
+                  {s.icon}
+                </div>
+
+                <h3 className="font-bold text-sky-900 mb-2">{s.title}</h3>
+
+                <p className="text-gray-600 text-sm mb-4">{s.description}</p>
+
+                <ul className="space-y-1">
+                  {s.features.map((f, i) => (
+                    <li key={i} className="text-sm text-gray-600 flex gap-2">
+                      <span className="w-1.5 h-1.5 bg-sky-500 rounded-full mt-2"></span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* SHOPS */}
-      <section className="max-w-6xl mx-auto px-4 py-20">
+      <section className="max-w-6xl mx-auto px-4 pt-30">
         <h2 className="text-4xl font-extrabold text-center text-sky-900 mb-4">
           Online Obchody
         </h2>
@@ -171,43 +192,8 @@ const Services = () => {
         </div>
       </section>
 
-      {/* SERVICES */}
-      <section className="py-10">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-extrabold text-center text-sky-900 mb-12">
-            Profesionálne Služby
-          </h2>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            {services.map((s) => (
-              <div
-                key={s.id}
-                className="p-6 rounded-xl border bg-linear-to-br from-sky-50 to-white hover:shadow-xl hover:-translate-y-2 transition group"
-              >
-                <div className="text-sky-300 group-hover:text-sky-500 mb-4 transition">
-                  {s.icon}
-                </div>
-
-                <h3 className="font-bold text-sky-900 mb-2">{s.title}</h3>
-
-                <p className="text-gray-600 text-sm mb-4">{s.description}</p>
-
-                <ul className="space-y-1">
-                  {s.features.map((f, i) => (
-                    <li key={i} className="text-sm text-gray-600 flex gap-2">
-                      <span className="w-1.5 h-1.5 bg-sky-500 rounded-full mt-2"></span>
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* WHY US */}
-      <section className="max-w-6xl mx-auto px-4 py-24">
+      <section className="max-w-6xl mx-auto px-4 pt-30">
         <h2 className="text-4xl font-extrabold text-center text-sky-900 mb-4">
           Prečo Si Vybrať Nás
         </h2>
@@ -258,26 +244,6 @@ const Services = () => {
               </p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-sky-50 py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-sky-900 mb-4">
-            Máte otázky ohľadom našich služieb?
-          </h2>
-
-          <p className="text-gray-600 mb-8">
-            Neváhajte nás kontaktovať – radi vám poradíme.
-          </p>
-
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="inline-block bg-sky-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-600 transition"
-          >
-            Kontaktovať nás
-          </button>
         </div>
       </section>
     </div>

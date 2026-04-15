@@ -68,38 +68,11 @@ const ContactForm = () => {
 
   return (
     <div className="font-sans bg-white">
-
-      {/* FAQ */}
-      <section className="max-w-5xl mx-auto px-4 pb-14 pt-30" id="contact">
-        <h2 className="text-4xl font-extrabold text-sky-900 text-center mb-10">
-          Často kladené otázky
-        </h2>
-
-        <div className="space-y-4">
-          {[
-            {
-              q: 'Ako dlho trvá kalibrácia?',
-              a: '3–5 pracovných dní podľa typu zariadenia.',
-            },
-            {
-              q: 'Robíte servis aj u zákazníka?',
-              a: 'Áno, podľa dohody vieme zabezpečiť výjazd.',
-            },
-            {
-              q: 'Kedy ste dostupní?',
-              a: 'Po–Pi 9:00 – 15:00',
-            },
-          ].map((f, i) => (
-            <div key={i} className="border rounded-lg p-4">
-              <h3 className="font-bold text-sky-900">{f.q}</h3>
-              <p className="text-gray-600 text-sm mt-1">{f.a}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* MAP + CONTACT */}
-      <section className="max-w-5xl mx-auto px-4 pb-16">
+      <section className="max-w-5xl mx-auto px-4 pt-30 pb-16" id='contact'>
+        <h2 className="text-4xl font-extrabold text-sky-900 text-center mb-10">
+          Kontaktujte Nás
+        </h2>
         <div className="grid md:grid-cols-2 gap-8 items-stretch">
 
           {/* MAPA */}
