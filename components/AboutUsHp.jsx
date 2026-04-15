@@ -56,7 +56,7 @@ const AboutUs = () => {
   return (
     <div className="font-sans bg-white">
       {/* ABOUT SECTION */}
-      <section id="about" className="max-w-5xl mx-auto px-4 pt-24 scroll-mt-24">
+      <section id="about" className="max-w-5xl mx-auto px-4 pt-24 scroll-mt-6">
         {/* HEADER */}
         <div className="text-center mb-14">
           <h2 className="text-4xl font-extrabold text-sky-900">

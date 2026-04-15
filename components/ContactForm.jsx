@@ -70,7 +70,7 @@ const ContactForm = () => {
     <div className="font-sans bg-white">
 
       {/* FAQ */}
-      <section className="max-w-5xl mx-auto px-4 pb-14 pt-30 scroll-mt-38" id="contact">
+      <section className="max-w-5xl mx-auto px-4 pb-14 pt-30" id="contact">
         <h2 className="text-4xl font-extrabold text-sky-900 text-center mb-10">
           Často kladené otázky
         </h2>
