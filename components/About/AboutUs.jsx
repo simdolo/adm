@@ -85,7 +85,7 @@ const AboutUs = () => {
         <div className="relative">
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="/lab.png"
+              src="/pic1.webp"
               alt="laboratory"
               width={600}
               height={400}
@@ -95,7 +95,7 @@ const AboutUs = () => {
 
           <div className="hidden md:block absolute -bottom-10 -left-10 w-48 rounded-xl overflow-hidden shadow-xl border">
             <Image
-              src="/celzius.png"
+              src="/pic2.jpg"
               alt="measurement"
               width={200}
               height={200}

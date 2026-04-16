@@ -10,6 +10,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-marmelad: var(--font-marmelad);
+  --font-nunito: var(--font-nunito);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,7 +24,13 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito);
 }
 
+h1, h2 {
+  font-family: var(--font-marmelad);
+}
 
+h3, h4, h5, h6 {
+  font-family: var(--font-nunito);
+}
