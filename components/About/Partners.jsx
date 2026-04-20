@@ -6,7 +6,6 @@ const clients = [
   { name: "Karl KOCH", category: "Nemecký výrobca", logo: "/partners/Koch.png" },
   { name: "TFA Dostmann", category: "Kvalitné prístroje", logo: "/partners/Tfa.png" },
   { name: "Greisinger", category: "Meracia technika", logo: "/partners/Greisinger.png" },
-  { name: "HACCP", category: "Certifikované", logo: "/partners/Haccp.png" },
 ];
 
 const Partners = () => {
@@ -16,7 +15,7 @@ const Partners = () => {
         Partneri
       </h2>
 
-      <div className="grid md:grid-cols-4 gap-6">
+      <div className="grid md:grid-cols-3 gap-6">
         {clients.map((c, i) => (
           <div
             key={i}

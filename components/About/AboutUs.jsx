@@ -79,6 +79,27 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
+          <div >
+            <div className="inline-flex items-center gap-4 bg-sky-50 border border-sky-200 rounded-xl px-5 py-3">
+              {/* PNG BADGE */}
+              <div className="w-24 h-24 relative">
+                <Image
+                  src="/partners/Haccp.png"
+                  alt="HACCP certifikát"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
+              {/* TEXT */}
+              <div>
+                <p className="font-bold text-sky-800">HACCP</p>
+                <p className="text-sm text-gray-500">
+                  Certifikované laboratórium
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* IMAGES */}
