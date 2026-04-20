@@ -7,7 +7,6 @@ import ServicesList from "@/components/Service/ServicesList";
 import AboutUs from "@/components/About/AboutUs";
 import Partners from "@/components/About/Partners";
 import History from "@/components/About/History";
-import Shops from "@/components/Service/Shops";
 import WhyUs from "@/components/Service/WhyUs";
 
 export default function Home() {
@@ -19,9 +18,8 @@ export default function Home() {
       <ServicesSection />
       <AboutUs />
       <History />
-      <Shops />
-      <WhyUs />
       <Partners />
+      <WhyUs />
       <ContactForm />
     </div>
   );
